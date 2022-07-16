@@ -1,4 +1,4 @@
-package com.tes1.demo.dto;
+package com.archisacademy.hotel_services.dto;
 
 public class UserDetailsDTO {
     private String name, location, company;

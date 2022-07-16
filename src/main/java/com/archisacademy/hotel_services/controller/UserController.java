@@ -1,7 +1,7 @@
-package com.tes1.demo.controller;
+package com.archisacademy.hotel_services.controller;
 
-import com.tes1.demo.dto.UserDetailsDTO;
-import com.tes1.demo.service.UserServices;
+import com.archisacademy.hotel_services.dto.UserDetailsDTO;
+import com.archisacademy.hotel_services.service.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
