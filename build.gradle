@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.9'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'com.diffplug.gradle.spotless' version '4.5.1'
 }
 
 group = 'com.tes1'
@@ -19,4 +20,15 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+compileJava.dependsOn 'spotlessApply'
+
+spotless{
+	java{
+		def src = 'src/main/java'
+		googleJavaFormat('1.7').aosp()
+		paddedCell()
+		removeUnusedImports()
+	}
 }
