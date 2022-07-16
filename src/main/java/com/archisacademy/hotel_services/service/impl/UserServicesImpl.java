@@ -1,7 +1,7 @@
 package com.archisacademy.hotel_services.service.impl;
 
-import com.archisacademy.hotel_services.service.UserServices;
 import com.archisacademy.hotel_services.dto.UserDetailsDTO;
+import com.archisacademy.hotel_services.service.UserServices;
 import org.springframework.stereotype.Service;
 
 @Service
