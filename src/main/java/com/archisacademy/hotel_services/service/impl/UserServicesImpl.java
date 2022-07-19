@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicesImpl implements UserServices {
-    public static String MyName = "Tolga";
-    public static String MyLocation = "Portugal";
-    public static String MyCompany = "Teleperformance";
+//    public static String MyName = "Tolga";
+//    public static String MyLocation = "Portugal";
+//    public static String MyCompany = "Teleperformance";
 
     @Override
     public String getWelcomeMessage(UserDetailsDTO user) {
@@ -25,20 +25,20 @@ public class UserServicesImpl implements UserServices {
         welcome = welcome.append(" are from ").append(user.getLocation()).append(" too!");
         return welcome.toString();
 
-        //        //Using IF_ELSE method
-        //        if (user.getName().equals(MyName)
-        //                && user.getLocation().equals(MyLocation)
-        //                && user.getCompany().equals(MyCompany)) {
-        //            return "Merhaba, I am " + user.getName() + " and this is my first SpringBoot
-        // Project!";
-        //        }
-        //        // using else here was redundant
-        //        return "Hi, I am "
-        //                + user.getName()
-        //                + " from "
-        //                + user.getCompany()
-        //                + ", "
-        //                + user.getLocation();
+//                //Using IF_ELSE method
+//                if (user.getName().equals(MyName)
+//                        && user.getLocation().equals(MyLocation)
+//                        && user.getCompany().equals(MyCompany)) {
+//                    return "Merhaba, I am " + user.getName() + " and this is my first SpringBoot
+//         Project!";
+//                }
+//                // using else here was redundant
+//                return "Hi, I am "
+//                        + user.getName()
+//                        + " from "
+//                        + user.getCompany()
+//                        + ", "
+//                        + user.getLocation();
     }
 
     private List<UserDetailsDTO> getUserDetails() {
