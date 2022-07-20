@@ -1,4 +1,4 @@
-package com.tes1.demo;
+package com.archisacademy.hotel_services;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

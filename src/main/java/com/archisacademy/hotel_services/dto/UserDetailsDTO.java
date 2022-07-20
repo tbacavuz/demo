@@ -1,4 +1,4 @@
-package com.tes1.demo.dto;
+package com.archisacademy.hotel_services.dto;
 
 public class UserDetailsDTO {
     private String name, location, company;
@@ -25,5 +25,11 @@ public class UserDetailsDTO {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+    public UserDetailsDTO(String name, String company, String location) {
+        this.name = name;
+        this.company = company;
+        this.location = location;
     }
 }
