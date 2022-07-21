@@ -1,19 +1,29 @@
 package com.archisacademy.hotel_services.service.impl;
 
 import com.archisacademy.hotel_services.dto.UserDetailsDTO;
+import com.archisacademy.hotel_services.exceptions.HotelServicesException;
 import com.archisacademy.hotel_services.service.UserServices;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServicesImpl implements UserServices {
-//    public static String MyName = "Tolga";
-//    public static String MyLocation = "Portugal";
-//    public static String MyCompany = "Teleperformance";
+    //    public static String MyName = "Tolga";
+    //    public static String MyLocation = "Portugal";
+    //    public static String MyCompany = "Teleperformance";
 
     @Override
     public String getWelcomeMessage(UserDetailsDTO user) {
+        try {
+            int a[] = new int[2];
+            System.out.println("Access element three :" + a[3]);
+        } catch (ArrayIndexOutOfBoundsException servicesException) {
+            throw new HotelServicesException(
+                    "an exception occurred in array - 12398", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
         StringBuilder welcome =
                 new StringBuilder().append("Hello ").append(user.getName()).append(",");
         List<UserDetailsDTO> userDetails = getUserDetails();
@@ -25,20 +35,20 @@ public class UserServicesImpl implements UserServices {
         welcome = welcome.append(" are from ").append(user.getLocation()).append(" too!");
         return welcome.toString();
 
-//                //Using IF_ELSE method
-//                if (user.getName().equals(MyName)
-//                        && user.getLocation().equals(MyLocation)
-//                        && user.getCompany().equals(MyCompany)) {
-//                    return "Merhaba, I am " + user.getName() + " and this is my first SpringBoot
-//         Project!";
-//                }
-//                // using else here was redundant
-//                return "Hi, I am "
-//                        + user.getName()
-//                        + " from "
-//                        + user.getCompany()
-//                        + ", "
-//                        + user.getLocation();
+        //                //Using IF_ELSE method
+        //                if (user.getName().equals(MyName)
+        //                        && user.getLocation().equals(MyLocation)
+        //                        && user.getCompany().equals(MyCompany)) {
+        //                    return "Merhaba, I am " + user.getName() + " and this is my first
+        // SpringBoot Project!";
+        //                }
+        //                // using else here was redundant
+        //                return "Hi, I am "
+        //                        + user.getName()
+        //                        + " from "
+        //                        + user.getCompany()
+        //                        + ", "
+        //                        + user.getLocation();
     }
 
     private List<UserDetailsDTO> getUserDetails() {
