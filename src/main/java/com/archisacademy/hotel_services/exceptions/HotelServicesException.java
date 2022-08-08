@@ -3,7 +3,7 @@ package com.archisacademy.hotel_services.exceptions;
 import org.springframework.http.HttpStatus;
 
 public class HotelServicesException extends ArrayIndexOutOfBoundsException {
-    //not sure what we use serialVersionUID for
+    // not sure what we use serialVersionUID for
     private static final long serialVersionUID = -5195206180035808362L;
     private HttpStatus errorCode;
 
@@ -16,7 +16,7 @@ public class HotelServicesException extends ArrayIndexOutOfBoundsException {
         this.errorCode = errorCode;
     }
 
-    //when do we need to call this method?
+    // when do we need to call this method?
     public HttpStatus getErrorCode() {
         return errorCode;
     }
