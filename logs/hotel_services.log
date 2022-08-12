@@ -1,0 +1,4 @@
+2022-08-10 21:25:54,557 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting DemoApplicationTests using Java 17.0.3 on Air13 with PID 11476 (started by bacav in C:\Users\bacav\OneDrive\IdeaProjects\hotel-services)
+2022-08-10 21:25:54,565 DEBUG org.springframework.boot.StartupInfoLogger [Test worker] Running with Spring Boot v2.6.9, Spring v5.3.21
+2022-08-10 21:25:54,573 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to 1 default profile: "default"
+2022-08-10 21:25:58,284 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started DemoApplicationTests in 4.537 seconds (JVM running for 7.595)

@@ -1,0 +1,13 @@
+2022-08-08 20:59:00,296 INFO org.springframework.boot.StartupInfoLogger [Test worker] Starting DemoApplicationTests using Java 17.0.3 on Air13 with PID 11716 (started by bacav in C:\Users\bacav\OneDrive\IdeaProjects\hotel-services)
+2022-08-08 20:59:00,311 DEBUG org.springframework.boot.StartupInfoLogger [Test worker] Running with Spring Boot v2.6.9, Spring v5.3.21
+2022-08-08 20:59:00,311 INFO org.springframework.boot.SpringApplication [Test worker] No active profile set, falling back to 1 default profile: "default"
+2022-08-08 20:59:02,572 INFO org.springframework.boot.StartupInfoLogger [Test worker] Started DemoApplicationTests in 2.873 seconds (JVM running for 5.17)
+2022-08-08 20:59:04,998 INFO org.springframework.boot.StartupInfoLogger [main] Starting HotelServicesApp using Java 17.0.3 on Air13 with PID 2176 (C:\Users\bacav\OneDrive\IdeaProjects\hotel-services\build\classes\java\main started by bacav in C:\Users\bacav\OneDrive\IdeaProjects\hotel-services)
+2022-08-08 20:59:04,998 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.9, Spring v5.3.21
+2022-08-08 20:59:04,998 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-08-08 20:59:06,598 INFO org.springframework.boot.StartupInfoLogger [main] Started HotelServicesApp in 2.247 seconds (JVM running for 2.679)
+2022-08-08 20:59:10,391 INFO com.archisacademy.hotel_services.service.impl.UserServicesImpl [http-nio-9090-exec-2] for loop executed: 0 times.
+2022-08-08 20:59:10,392 INFO com.archisacademy.hotel_services.service.impl.UserServicesImpl [http-nio-9090-exec-2] for loop executed: 1 times.
+2022-08-08 20:59:10,393 INFO com.archisacademy.hotel_services.service.impl.UserServicesImpl [http-nio-9090-exec-2] for loop executed: 2 times.
+2022-08-08 20:59:10,393 INFO com.archisacademy.hotel_services.service.impl.UserServicesImpl [http-nio-9090-exec-2] for loop executed: 3 times.
+2022-08-08 20:59:10,394 INFO com.archisacademy.hotel_services.service.impl.UserServicesImpl [http-nio-9090-exec-2] for loop executed: 4 times.
