@@ -16,6 +16,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.keycloak:keycloak-spring-boot-starter:19.0.1'
 }
 
 tasks.named('test') {
